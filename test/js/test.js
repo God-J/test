@@ -1,9 +1,3 @@
-// var p1 = document.getElementsByTagName("p")[0];
-// var p2 = document.getElementsByTagName("p")[1];
-// var p3 = document.getElementsByTagName("p")[2];
-// var p4 = document.getElementsByTagName("p")[3];
-// var p5 = document.getElementsByTagName("p")[4];
-
 
 var p = document.getElementsByTagName("p");
 
