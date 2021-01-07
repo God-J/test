@@ -10,9 +10,7 @@ var p = document.getElementsByTagName("p");
 var temp = 0
 
 
-
-
-
+ // 点击事件
 for(var i=0;i<p.length;i++) {
 
     function click_item(obj) {
@@ -41,13 +39,11 @@ for(var i=0;i<p.length;i++) {
 
     }
 
-
+    // 曲线图
     var xhr = new XMLHttpRequest();//第一步：新建对象
     xhr.open('GET', 'https://edu.telking.com/api/?type=month', true);//第二步：打开连接  将请求参数写在url中
     xhr.send();//第三步：发送请求  将请求参数写在URL中
-    /**
-     * 获取数据后的处理程序
-     */
+
     xhr.onreadystatechange = function () {
         if (xhr.readyState == 4 && xhr.status == 200) {
             var res = xhr.responseText;//获取到json字符串，解析
@@ -88,13 +84,11 @@ for(var i=0;i<p.length;i++) {
         }
     };
 
-
+    // 饼状图
     var ds = new XMLHttpRequest();//第一步：新建对象
     ds.open('GET', 'https://edu.telking.com/api/?type=week', true);//第二步：打开连接  将请求参数写在url中
     ds.send();//第三步：发送请求  将请求参数写在URL中
-    /**
-     * 获取数据后的处理程序
-     */
+
     ds.onreadystatechange = function () {
         if (ds.readyState == 4 && ds.status == 200) {
             var res = ds.responseText;//获取到json字符串，解析
@@ -110,27 +104,13 @@ for(var i=0;i<p.length;i++) {
                     text: '饼状图数据展示',
                     padding: [20, 20, 100, 230],
                 },
-                // tooltip: {},
-                // legend: {
-                //     // data:['销量']
-                // },
-                // xAxis: {
-                //     data: res.data.xAxis
-                // },
-                // yAxis: {},
+
                 series: [{
-                    // // name: '销量',
-                    // type:'pie',
-                    // // symbol: 'none',
-                    // smooth:true,
-                    // label:{
-                    //     show:true
-                    // },
-                    // data: [res.data.series]
+
                     name: '访问来源',
-                    type: 'pie',    // 设置图表类型为饼图
-                    radius: '55%',  // 饼图的半径，外半径为可视区尺寸（容器高宽中较小一项）的 55% 长度。
-                    data: [          // 数据数组，name 为数据项名称，value 为数据项值
+                    type: 'pie',
+                    radius: '55%',
+                    data: [
                         {value: res.data.series[0], name: res.data.xAxis[0]},
                         {value: res.data.series[1], name: res.data.xAxis[1]},
                         {value: res.data.series[2], name: res.data.xAxis[2]},
@@ -145,12 +125,11 @@ for(var i=0;i<p.length;i++) {
         }
     };
 
+    // 柱状图
     var zh = new XMLHttpRequest();//第一步：新建对象
     zh.open('GET', 'https://edu.telking.com/api/?type=week', true);//第二步：打开连接  将请求参数写在url中
     zh.send();//第三步：发送请求  将请求参数写在URL中
-    /**
-     * 获取数据后的处理程序
-     */
+
     zh.onreadystatechange = function () {
         if (zh.readyState == 4 && zh.status == 200) {
             var res = zh.responseText;//获取到json字符串，解析
