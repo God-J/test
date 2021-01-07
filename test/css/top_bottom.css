@@ -1,0 +1,71 @@
+.background{
+
+    background-color: rgb(234,238,238)
+
+}
+
+.border{
+
+    background-color: rgb(255, 255, 255);
+    width: 99%;
+    height: 60px;
+    margin: 0 auto;
+
+}
+
+.border .logo{
+
+    background-color: red;
+    width: 50px;
+    color:white;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 80px;
+    float: left;
+
+}
+
+.border .logout{
+
+    background-color: red;
+    width: 80px;
+    color:white;
+    text-align: center;
+    margin-top: 20px;
+    margin-right: 80px;
+    float:right;
+    padding:2px 0;
+    cursor: pointer;
+
+}
+
+.border .icon{
+
+    margin-top: 20px;
+    width: 20px;
+    float: right;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+
+.bottom{
+
+    background-color: rgb(20, 20, 23);
+    width: 100%;
+    display: flex;
+    color: white;
+    justify-content: space-around ;
+
+}
+
+.bottom .log{
+
+    margin-top: 20px;
+    background-color: red;
+    width: 50px;
+    color:white;
+    height: 20px;
+    margin-left: -5px;
+
+}

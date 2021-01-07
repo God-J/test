@@ -1,0 +1,165 @@
+.middle{
+
+    position: relative;
+
+}
+
+
+.middle .top{
+
+    margin-left: 80px;
+
+}
+
+.top .title{
+
+    width: 100%;
+    font-size: 25px;
+
+}
+
+.navigation{
+
+    position: relative;
+    right: 40px;
+
+}
+
+.navigation .item{
+
+    float: right;
+    font-size: 15px;
+    margin-top: -30px;
+    margin-right: 40px;
+    cursor: pointer;
+
+}
+
+.navigation .item2{
+
+    float: right;
+    font-size: 15px;
+    margin-top: -30px;
+    margin-right: 40px;
+    cursor: pointer;
+
+}
+
+.navigation .item:hover{
+
+    border-bottom: rgb(83, 199, 37) 3px solid;
+    font-size: 18px;
+
+}
+
+
+
+
+.middle_middle .right_bar{
+
+    background-color: rgb(255, 255, 255);
+    width: 600px;
+    height: 80px;
+    position: absolute;
+    left: 650px;
+    /*bottom: 240px;*/
+    bottom: 965px;
+
+}
+
+.right_bar .title1{
+
+    position: absolute;
+    bottom: 25px;
+    left: 60px;
+
+}
+
+.right_bar .title2{
+
+    padding: 10px;
+    border:wheat 2px solid;
+    position: absolute;
+    bottom: 19px;
+    left: 400px;
+
+}
+
+.right_table{
+
+    background-color: rgb(255, 255, 255);
+    width: 600px;
+    height: 160px;
+    position: absolute;
+    left: 650px;
+    bottom:799px;
+
+}
+
+.right_table .table1{
+
+    position: absolute;
+    left: 60px;
+    bottom: 40px;
+
+}
+
+.right_table .table2{
+
+    position: absolute;
+    left: 180px;
+    bottom: 40px;
+
+}
+
+.right_table .table3{
+
+    position: absolute;
+    left: 400px;
+    bottom: 40px;
+
+}
+
+
+.table_data1{
+
+    padding-top: 7px;
+    padding-bottom: 5px;
+
+}
+
+
+.table_data2{
+
+    border: #2de22d 2px solid;
+    padding: 4px 2px;
+    background-color: #2de22d;
+    color: #ffffff;
+
+}
+
+
+.charts .line{
+
+    position: relative;
+    bottom: 40px;
+    left: 90px;
+
+}
+
+.charts .pie{
+
+    position: relative;
+    left: 90px;
+    bottom: 20px;
+
+}
+
+
+.charts .bar{
+
+    position: absolute;
+    bottom: 20px;
+    right: 100px;
+
+}
